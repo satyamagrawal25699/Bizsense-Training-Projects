@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic JavaScript</title>
+    <script>
+      function myfunction() {
+        document.getElementById("demo1").innerHTML = "Hello I am Satyam ";
+        document.getElementById("demo2").innerHTML =
+          "and I am learning JavaScript now ";
+      }
+
+      // Create an Array:
+      const cars = ["Saab", "Volvo", "BMW"];
+
+      // Change an element:
+      cars[0] = "Toyota";
+
+      // Add an element:
+      cars.push("Audi");
+
+      // Display the Array:
+      document.getElementById("demo").innerHTML = cars;
+    </script>
+  </head>
+
+  <body>
+    <h2>JavaScript Basic learning</h2>
+    <p>The best practice to write js in external file</p>
+
+    <button type="button" onclick="myfunction()">Click Here</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <h2>JavaScript const</h2>
+    <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+    <p id="arrays"></p>
+  </body>
+</html>

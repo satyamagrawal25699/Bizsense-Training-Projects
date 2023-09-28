@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Input form</title>
+</head>
+
+<body>
+    <form nonvalidate class="narrow">
+        <h2 class="h3">Search</h3>
+
+            <input type="search" id="search-text" class="form-control" placeholder="search" autofocus />
+    </form>
+
+    <form class="narrow">
+        <h2 class="h3">Contact Info</h2>
+        <input type="text" id="name-text" placeholder="first and last name" required pattern="(.*)\s(.*)"
+            class="form-control">
+
+        <input type="email" id="email-text" placeholder="email address " required class="form-control">
+
+        <input type="tele" id="phone-text" placeholder="phone number " required class="form-control">
+        
+
+
+    </form>
+</body>
+
+</html>

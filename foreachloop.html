@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Iterations</title>
+  </head>
+  <body>
+    <h1>JavaScript Arrrays</h1>
+    <p id="demo"></p>
+
+    <script>
+      const numbers = [45, 4, 9, 16, 25];
+      let txt = "";
+      numbers.forEach(myfunction);
+      document.getElementById("demo").innerHTML = txt;
+
+      function myfunction(value, index, array) {
+        txt += value + "<br>";
+      }
+    </script>
+
+    <h2>Array Map</h2>
+    <p id="demo2"></p>
+    <script>
+      const numbers1 = [45, 4, 9, 16, 25];
+      const numbers2 = numbers1.map(myfunction);
+      document.getElementById("demo2").innerHTML = numbers2;
+      function myfunction(value) {
+        return value * 2;
+      }
+    </script>
+
+    <h2>Array Filter</h2>
+    <p id="demo3"></p>
+    <script>
+      const numbers3 = [45, 4, 9, 16, 25];
+      const over18 = numbers.filter(myfunction);
+      function myfunction(value) {
+        return value > 18;
+      }
+      document.getElementById("demo3").innerHTML = over18;
+    </script>
+
+    <h2>Reduce method</h2>
+    <p id="demo4"></p>
+    <script>
+      const numbers4 = [45, 4, 9, 16, 25];
+      let sum = numbers4.reduce(myfunction);
+      document.getElementById("demo4").innerHTML = "The sum is " + sum;
+      function myfunction(total, value) {
+        return total + value;
+      }
+    </script>
+  </body>
+</html>

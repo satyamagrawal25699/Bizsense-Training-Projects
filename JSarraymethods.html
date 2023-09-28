@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrray Methods</title>
+  </head>
+  <body>
+    <h2>Array's Methods</h2>
+    <div id="demo"></div>
+
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo").innerHTML = fruits.toString();
+    </script>
+    <h2>Join Method</h2>
+    <div id="demo1"></div>
+    <script>
+      const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo1").innerHTML = fruits.join("*");
+    </script>
+    <h2>POP and push methods</h2>
+    <div id="demo2"></div>
+    <script>
+      const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+      fruits2.pop();
+      fruits2.push("Watermelon");
+      document.getElementById("demo2").innerHTML = fruits2;
+    </script>
+
+    <h2>Shift and unshift methods</h2>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+
+    <script>
+      const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo3").innerHTML = fruits3;
+      fruits3.shift();
+      document.getElementById("demo4").innerHTML = fruits3;
+    </script>
+
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <script>
+      const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo5").innerHTML = fruits4;
+      fruits4.unshift("Lemon");
+      document.getElementById("demo6").innerHTML = fruits4;
+    </script>
+
+    <h2>Concatenation method</h2>
+    <div id="demo7"></div>
+    <script>
+      const array1 = ["Cecilie", "Lone"];
+      const array2 = ["Emil", "Tobias", "Linus"];
+      const array3 = ["Robin", "Morgan"];
+
+      const myChildren = array1.concat(array2, array3);
+
+      document.getElementById("demo7").innerHTML = myChildren;
+    </script>
+
+    <h2>Merging an array with values</h2>
+    <div id="demo8"></div>
+
+    <script>
+      const myArray = ["Satyam", "Shubham", "Anil"];
+      const myFriend = myArray.concat("Saurabh");
+      document.getElementById("demo8").innerHTML = myFriend;
+    </script>
+
+    <h2>Splicing and slicing of an Array</h2>
+    <div id="demo9"></div>
+
+    <script>
+      const fruit6 = ["Banana", "Orange", "Apple", "Mango"];
+      fruit6.splice(2, 0, "Lemon", "kiwi");
+      document.getElementById("demo9").innerHTML = fruit6;
+    </script>
+  </body>
+</html>

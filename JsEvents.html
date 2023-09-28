@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Events</title>
+  </head>
+
+  <body>
+    <h2>The JavaScript Events</h2>
+    <h3>Get the Today's Date by clcking below's button</h3>
+    <button onclick="document.getElementById('date').innerHTML=Date()">
+      Get the Date
+    </button>
+    <p id="date"></p>
+
+    <button onclick="this.innerHTML=Date()">Get the date here</button>
+
+    <div onmouseover="this.style.backgroundColor='red'">
+      This div element and its color should be changed when hovering it
+    </div>
+
+    <h2>Javascript Arrays</h2>
+    <p id="cars"></p>
+    <p id="bikes"></p>
+    <p id="transport"></p>
+    <script>
+      const cars = ["Maruti,Mahindra,Nexon EV,BMW"];
+      document.getElementById("cars").innerHTML = cars;
+
+      const bikes = [];
+      bikes[0] = "Scooty";
+      bikes[1] = "Honda";
+      bikes[2] = "Pulsor";
+      document.getElementById("bikes").innerHTML = bikes;
+
+      const transport = new Array("Bus", "Train", "Plain");
+      document.getElementById("transport").innerHTML = transport;
+    </script>
+
+    <h2>The looping in the array</h2>
+    <p id="looping"></p>
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      let text = "<ul>";
+      for (let i = 0; i < fruits.length; i++) {
+        text += "<li>" + fruits[i] + "</li>";
+      }
+      text += "</ul>";
+      document.getElementById("looping").innerHTML = text;
+    </script>
+  </body>
+</html>

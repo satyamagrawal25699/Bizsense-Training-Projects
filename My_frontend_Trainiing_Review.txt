@@ -1,0 +1,73 @@
+
+ FRONT END DEVELOPMENT Technologies Overview 
+ 
+ 1) HTML 
+ 
+ 2) CSS
+ 
+ 3) JAVASCRIPT
+ 
+ 4) REACT
+ 
+ 5) REDUX
+ 
+ 6) SCSS
+ 
+ 
+ 
+ 
+ I]  HTML
+ 
+ 
+ 
+ 
+ 
+ II] CSS
+ 
+ 
+ 
+ 
+ III] JAVASCRIPT
+ 
+ 
+ 
+ 
+ IV] REACT 
+ 
+   Basic Concepts
+   
+   i) introduction: Folder Structure,First App-Hello World, JSX
+
+   ii) Components: Class & Fuctional Components
+
+   iii) Props :- Passing the props to components , Destructuring props in components , Methods as props
+   
+   iv) Event Handler: Event Handling, Bind Event Handler
+   
+   v) Conditional rendering : Using if else conditional operator , List Rendering suing static as well as dynamic approach (using map ), List and Keys
+   
+   Vi) Styling and CSS in React
+   
+   vi) Form Handling ; By creating Controlled Component
+   
+   vii) HTTP GET & POST Request using Axios
+   
+   
+    Hooks in React 
+	
+	In this we learnt importance & Application of Hook
+	
+	
+	i) UseState : Accesing state, with prev state, with object , with array
+	
+	ii) UseEffect : It calls the fuction after every render of the component, we can dependency into it,fetching of data using useEffect
+	
+	iii) useReducer : 
+	
+	iv) Custom Hooks : 
+	
+	
+	
+	
+	
+	

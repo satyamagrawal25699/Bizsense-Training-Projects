@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Course_Admission_form</title>
+    <link rel="stylesheet" href="admission_form.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Registration</a></li>
+        </ul>
+
+    </div>
+    <h1>Admission Form </h1>
+
+    <div class="firstclass">
+        <form name="myform" id="myForm" onsubmit="return validateForm()">
+
+            <div class="secondclass">
+                <label for="Name"> Student Name </label><br>
+                <div id="name">
+                    <input type="text" id="Name" name="fname" onkeyup="return validateName()" required><br><br>
+                    <div id="nameerror" class="formerror" style="color: red;font-size: 12px; margin-bottom: 16px;">
+                    </div>
+                </div>
+                <label for="Roll_No"> Roll No </label><br>
+                <div id="roll">
+                    <input type="text" name="Roll_No" onkeyup="return validateRollNo()" id="Roll_No" required><br><br>
+                    <div id="rollno" class="formerror" style="color: red;font-size: 12px; margin-bottom: 16px;"></div>
+                </div>
+
+                <label for="Email"> Email </label><br>
+                <div id="email">
+                    <input type="email" name="femail" onkeyup="return validateEmail()" id="Email" required><br><br>
+                    <div id="emailerror" class="formerror" style="color: red;font-size: 12px; margin-bottom: 16px;">
+                    </div>
+                </div>
+
+                <div id="branch">
+                    <label for="Branch"> Branch </label><br>
+                    <input type="text" id="Branch" onkeyup="return validateBranch()" name="Branch"><br><br>
+                    <div id="brancherror" class="formerror" style="color: red;font-size: 12px; margin-bottom: 16px;">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="outergenderDOB">
+                <input type="radio" id="radiobutton" name="gender" class="genderDOB" required>
+                <label for="radiobutton" class="genderDOB" style="color: red;"> Male </label>
+
+                <input type="radio" id="radiobutton2" name="gender" class="genderDOB">
+                <label for="radiobutton2" class="genderDOB" style="color: red;"> Female </label>
+
+
+                <label for="birthday" class="genderDOB" style="color: red;">DOB:</label>
+                <input type="date" id="birthday" name="birthday" class="genderDOB" style="color: red;" required>
+            </div>
+
+
+
+            <div class="outerTechnology">
+                <h4>Tick Technologies that you know </h4>
+                <div class="Technology">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1"> HTML </label>
+                </div>
+
+
+                <div class="Technology">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2"> CSS </label>
+                </div>
+
+                <div class="Technology">
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3"> Javascript </label> </br></br>
+                </div>
+            </div>
+
+
+            <div class="course">
+                <h4> Tick the course that you want to take admission for </h4>
+
+                <div class="innercourseclass">
+                    <input type="radio" id="radiobutton3" name="radiobutt" required>
+                    <label for="radiobutton2"> Full Stack Web Dev. </label>
+                </div>
+
+                <div class="innercourseclass">
+                    <input type="radio" id="radiobutton3" name="radiobutt">
+                    <label for="radiobutton2"> Data Science . </label>
+                </div>
+
+                <div class="innercourseclass">
+                    <input type="radio" id="radiobutton3" name="radiobutt">
+                    <label for="radiobutton2"> Machine Learning. </label>
+                </div>
+
+                <div class="innercourseclass">
+                    <input type="radio" id="radiobutton3" name="radiobutt">
+                    <label for="radiobutton2"> Artificial Intelligence . </label>
+                </div>
+            </div>
+
+            <div class="textAreaclass">
+                <h4> Descibe yourself in min 100 words </h4>
+                <textarea name="message" rows="10" cols="30" placeholder="Enter words up to 100 words" id="textarea"
+                    required></textarea> <br><br>
+            </div>
+
+            <section>
+                <input class="button" onclick="generate()" type="button" id="btn" value="Submit" >
+            </section>
+
+    </form>
+
+    </div>
+    <br>
+   
+    <div id="table" class="form"></div>
+
+</body>
+<script src="script9.js"></script>
+
+<html>

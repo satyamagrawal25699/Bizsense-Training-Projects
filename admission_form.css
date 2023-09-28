@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px;
+}
+
+.firstclass {
+  padding-top: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+  border: 1px solid red;
+  border-radius: 4px;
+  background-color: aqua;
+  opacity: 0.8;
+}
+
+.secondclass {
+  padding: 20px 0px 50px 50px;
+  color: blueviolet;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: red;
+  font-size: 30px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-left: 20px;
+  padding: 20px;
+}
+
+input[type="checkbox"] {
+  margin-left: 20px;
+}
+
+.course {
+  color: blueviolet;
+  padding: 20px;
+}
+
+.genderDOB {
+  display: inline-block;
+  padding: 20px 20px 30px 20px;
+}
+
+.outergenderDOB {
+  margin-left: 22px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.Technology {
+  padding: 5px;
+}
+
+.outerTechnology {
+  color: blueviolet;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  font-size: large;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.innercourseclass {
+  display: inline-block;
+  padding: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.textAreaclass {
+  margin-left: 20px;
+}
+
+#textarea {
+  width: 30%;
+  margin-top: 10px;
+  border: 2px solid chocolate;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+  margin-left: 250px;
+  width: 100px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  width: 20%;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: bold;
+  color: red;
+}
+
+input[type="submit"]:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 20px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 30px;
+  background-color: bisque;
+  width: 100%;
+}
